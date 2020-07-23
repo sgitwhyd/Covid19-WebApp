@@ -3,34 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .card {
-            background-color: red;
-            width: 350px;
-            height: auto;
-            border-radius: 20px;
-        }
-
-        h3, p {
-            padding: 20px 0px 10px 30px;
-            color: white;
-        }
-    </style>
+    <title>Data Covid</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
 <body>
-    
-    <h1 id="title"></h1>
-  
-    <div class="card">
-        <h3 id="positif"></h3>
-        <p id="newConfirmed"></p>
-        <h3 id="sembuh"></h3>
-        <p id="newRecovered"></p>
-        <h3 id="meninggal"></h3>
-        <p id="newDeaths"></p>
-        <p id="Date"></p>
-    </div>
+
+
+ <div class="container">
+    <div class="card text-white bg-danger mb-3 mt-5" style="width: 500px;">
+        <div class="card-header">
+            <h1>Data Covid-19</h1>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">
+            <h1 id="title"></h1>
+          </h5>
+          <p class="card-text">
+            <h4 id="positif"></h4>
+            <p id="newConfirmed"></p>
+            <h4 id="sembuh"></h4>
+            <p id="newRecovered"></p>
+            <h4 id="meninggal"></h4>
+            <p id="newDeaths"></p>
+            <p id="Date"></p>
+          </p>
+        </div>
+      </div>
+ </div>
 
     
 <script src="script.js" type="module"></script>
