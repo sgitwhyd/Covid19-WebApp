@@ -18,7 +18,7 @@ const reqApiCorona = async() => {
         newDeaths.innerHTML = `Kematian Baru Terkonfirmasi: ${res.Countries[77].NewDeaths} orang`;
         totalMeninggal.innerHTML = `Total Kematian : ${res.Countries[77].TotalDeaths} orang`;
         newRecovered.innerHTML = `Pasien Baru Sembuh : ${res.Countries[77].NewRecovered} orang`
-        totalSembuh.innerHTML = `Pasien Sembuh : ${res.Countries[77].TotalRecovered} orang`;
+        totalSembuh.innerHTML = `Total Sembuh : ${res.Countries[77].TotalRecovered} orang`;
         refreshData.innerHTML = `Data Terkahir diperbaharui Pada: ${res.Countries[77].Date}`;
         
     }catch(error) {
