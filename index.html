@@ -4,14 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .card {
+            background-color: red;
+            width: 350px;
+            height: auto;
+            border-radius: 20px;
+        }
+
+        h3, p {
+            padding: 20px 0px 10px 30px;
+            color: white;
+        }
+    </style>
 </head>
 <body>
     
-    <h1>Data COVID-19 Indonesia</h1>
-    <h3 id="positif"></h3>
-    <h3 id="sembuh"></h3>
-    <h3 id="meninggal"></h3>
-    <h3 id="Dirawat"></h3>
+    <h1 id="title"></h1>
+  
+    <div class="card">
+        <h3 id="positif"></h3>
+        <p id="newConfirmed"></p>
+        <h3 id="sembuh"></h3>
+        <p id="newRecovered"></p>
+        <h3 id="meninggal"></h3>
+        <p id="newDeaths"></p>
+        <p id="Date"></p>
+    </div>
 
     
 <script src="script.js" type="module"></script>
