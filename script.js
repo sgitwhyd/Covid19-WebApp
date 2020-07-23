@@ -12,11 +12,11 @@ const reqApiCorona = async() => {
         const req = await fetch("https://api.covid19api.com/summary")
         const res = await req.json();
     
-        title.innerHTML = `Negara : ${res.Countries[77].Country}`
+        title.innerHTML = `Data Covid-19 di Negara ${res.Countries[77].Country}`
         NewConfirmed.innerHTML = `Kasus Baru Terkonfirmasi : ${res.Countries[77].NewConfirmed} orang`;
         totalPositif.innerHTML = `Total Kasus : ${res.Countries[77].TotalConfirmed} orang`;
         newDeaths.innerHTML = `Kematian Baru Terkonfirmasi: ${res.Countries[77].NewDeaths} orang`;
-        totalMeninggal.innerHTML = `Total Kematian ${res.Countries[77].TotalDeaths} orang`;
+        totalMeninggal.innerHTML = `Total Kematian : ${res.Countries[77].TotalDeaths} orang`;
         newRecovered.innerHTML = `Pasien Baru Sembuh : ${res.Countries[77].NewRecovered} orang`
         totalSembuh.innerHTML = `Pasien Sembuh : ${res.Countries[77].TotalRecovered} orang`;
         refreshData.innerHTML = `Data Terkahir diperbaharui Pada: ${res.Countries[77].Date}`;

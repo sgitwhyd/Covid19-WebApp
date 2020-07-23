@@ -10,26 +10,58 @@
 
 
  <div class="container">
-    <div class="card text-white bg-danger mb-3 mt-5" style="width: 400px;">
-        <div class="card-header">
-            <h1>Data Covid-19</h1>
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">
-            <h1 id="title"></h1>
-          </h5>
-          <p class="card-text">
-            <h4 id="positif"></h4>
-            <p id="newConfirmed"></p>
-            <h4 id="sembuh"></h4>
-            <p id="newRecovered"></p>
-            <h4 id="meninggal"></h4>
-            <p id="newDeaths"></p>
-            <p id="Date"></p>
-          </p>
-        </div>
-      </div>
+    <h1 id="title" class="text-center mt-5"></h1>
+    <div class="row mt-5 mb-3">
+        <div class="col"></div>
+            <div class="card text-white bg-danger mb-3" style="width: 300px;">
+                <div class="card-header text-center">
+                    <h2>Positif</h2>
+                </div>
+                <div class="card-body">
+                    <p class="card-text text-center">
+                        <h4 id="positif"></h4>
+                        <p id="newConfirmed"></p>
+                    </p>
+                </div>
+            </div>
+          <div class="col"></div>
+            <div class="card text-white bg-success mb-3" style="max-width: 300px;">
+                <div class="card-header text-center"><h2>Sembuh</h2></div>
+                <div class="card-body">
+                    <p class="card-text text-center">
+                    <h4 id="sembuh"></h4>
+                    <p id="newRecovered"></p>   
+                    </p>
+                </div>
+            </div>
+
+            <div class="col"></div>
+                <div class="card text-white bg-warning mb-3" style="max-width: 300px;">
+                    <div class="card-header text-center">
+                        <h2>Meninggal</h2>
+                    </div>
+                <div class="card-body">
+                <p class="card-text">
+                    <h4 id="meninggal"></h4>
+                    <p id="newDeaths"></p>
+                </p>
+                </div>
+          </div>
+    </div>
+
+
+
+      <p id="Date" class="text-center"></p>
  </div>
+
+ 
+   
+
+     
+
+      
+            
+            
 
     
 <script src="script.js" type="module"></script>
