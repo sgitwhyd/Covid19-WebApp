@@ -1,7 +1,7 @@
     const reqApi = async() => {
         const baseUrl = "https://covid19.mathdro.id/api/countries/IDN"
         try {
-            const response = await fetch(`${baseUrl}`)
+            const response = await fetch(baseUrl)
             const responseJson = await response.json();
             viewData(responseJson);
         }catch(error){
