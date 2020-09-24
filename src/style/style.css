@@ -1,10 +1,27 @@
+body {
+    background: #667db6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
 .navbar-brand {
     font-size: 20px;
 }
 
 .header {
-    background: cyan;
+    color: white;
+    
 }
+
+.navbar-brand, .navbar-text {
+    font-size: 25px
+}
+
+.text-heading {
+    color: white;
+}
+
 .cover-card {
     background: blue;
     border-radius: 30px;
@@ -12,18 +29,20 @@
 
 .footer{
     width: 100%;
-    background: aqua;
-   
- 
- 
     position: absolute;
     bottom: 0;
 }
 
+
 .footer_text {
     text-align: center;
     margin-top: 15px;
-    color:black;
+    color: white;
+}
+
+#updateDate{
+    color: white;
+    font-size: 15px;
 }
 
 @media (max-width: 425px) {
@@ -44,5 +63,9 @@
 
     .card-hijau {
         margin: 30px 0;
+    }
+
+    .navbar-brand, .navbar-text {
+        font-size: 20px
     }
 }

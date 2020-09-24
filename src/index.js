@@ -1,7 +1,7 @@
 import "./style/style.css";
 import "regenerator-runtime";
 import "./script/Navbar.js";
-import "./script/view/card-element.js";
+import './script/footer';
 import reqApi from "./script/view/data.js";
 
 
@@ -15,7 +15,7 @@ window.addEventListener("load", _ => {
         alert(`Selamat Datang ${name}`);
         document.querySelector("#user").innerHTML = `Hi ${name}`;
     }
+    reqApi();
 
 })
 
-reqApi();

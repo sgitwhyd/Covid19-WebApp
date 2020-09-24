@@ -10,15 +10,48 @@
     }
 
     const viewData = (responseJson) => {
-        let confirmed = document.getElementById("positif");
-        let recovered = document.getElementById('sembuh');
-        let death= document.getElementById("meninggal");
-        let update = document.getElementById("updateDate");
+        const covidContainer = document.querySelector('#covid-container');
+        covidContainer.innerHTML = `<div class="container">
+        <h2 class="text-center mt-5 text-heading">Informasi Kasus Covid-19 di Indonesia</h2>
+    <div class="row mt-4">
+        <div class="col-md-4 col-sm-12">
+            <div class="card text-white bg-danger" style="max-height: 300px;">
+                <div class="card-header text-center">
+                    <h2>Positif</h2>
+                </div>
+                <div class="card-body">
+                    <p class="card-text text-center">
+                        <h4 class="text-center">${responseJson.confirmed.value} Orang</h4>
+                    </p>
+                </div>
+            </div>
+        </div>
+          <div class="col-md-4 col-sm-12">
+              <div class="card text-white bg-success card-hijau" style="max-height: 300px;">
+                  <div class="card-header text-center"><h2>Sembuh</h2></div>
+                  <div class="card-body">
+                      <p class="card-text">
+                      <h4 class="text-center">${responseJson.recovered.value} Orang</h4> 
+                      </p>
+                  </div>
+              </div>
+          </div>
 
-        confirmed.innerHTML = `Pasien Terkonfirmasi : ${responseJson.confirmed.value} orang`
-        recovered.innerHTML = `Pasien Sembuh : ${responseJson.recovered.value} orang`
-        death.innerHTML = `Pasien Meninggal : ${responseJson.deaths.value} orang`;
-        update.innerHTML = `*Terakhir di update pada : ${responseJson.lastUpdate}`;
+            <div class="col-md-4 col-sm-12">
+                    <div class="card text-white bg-warning" style="max-height: 300px;">
+                        <div class="card-header text-center">
+                            <h2>Meninggal</h2>
+                        </div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            <h4 class="text-center">${responseJson.deaths.value} Orang</h4>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <p id="updateDate" class="mt-3">*${responseJson.lastUpdate}</p>
+        </div>;`
     }
 
     export default reqApi;
