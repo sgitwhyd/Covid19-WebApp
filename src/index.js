@@ -1,7 +1,7 @@
 import "./style/style.css";
 import "regenerator-runtime";
-import "./script/Navbar.js";
-import './script/footer';
+import Navbar from "./script/Navbar.js";
+import Footer from './script/footer';
 import reqApi from "./script/view/data.js";
 
 
@@ -15,6 +15,8 @@ window.addEventListener("load", _ => {
         alert(`Selamat Datang ${name}`);
         document.querySelector("#user").innerHTML = `Hi ${name}`;
     }
+    Navbar
+    Footer
     reqApi();
 
 })
