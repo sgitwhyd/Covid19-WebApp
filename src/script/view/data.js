@@ -50,7 +50,7 @@
                 </div>
             </div>
             </div>
-            <p id="updateDate" class="mt-3">*${responseJson.lastUpdate}</p>
+            <p id="updateDate" class="mt-3"> Terakhir di Update pada ${responseJson.lastUpdate}</p>
         </div>;`
     }
 
